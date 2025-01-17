@@ -1,3 +1,5 @@
+//signing the commit
+
 gpg --full-generate-key
 gpg --list-secret-keys --keyid-format long
 echo "newfile" >> file3.txt  
