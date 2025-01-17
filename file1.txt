@@ -1,1 +1,38 @@
-hello world
+   85  gpg --full-generate-key
+   86  gpg --list-secret-keys --keyid-format long
+   87  echo "newfile" >> file3.txt
+   88  git add .
+   89  git commit -m "adding new fil"
+   90  git push
+   91  echo "file 4" >> file4.txt
+   92  git add .
+   93  git commit -s -m "encryption"
+   94  git commit -S -m "encryption"
+   95  git log
+   96  git log --show-signature
+   97  git config --global commit.gpgsign true
+   98  git commit -S -m "encryption"
+   99  git config --global user.signinkey FC77177DB4295BCB
+  100  git log
+  101  git log --show-signature
+  102  git config --global commit.gpgsign true
+  103  git commit -S -m "ency"
+  104  git log
+  105  echo "file here" >> file5.txt
+  106  git add .
+  107  git commit -S -m "secure"
+  108  git configure --global user.signkey FC77177DB4295BCB
+  109  git config --global user.signkey FC77177DB4295BCB
+  110  git log
+  111  git config --global commit.gpgsign true
+  112  git commit -S -m "secure"
+  113  git commit -S -m "secure"
+  114  git config --global user.signinkey FC77177DB4295BCB
+  115  git config --global user.signingkey FC77177DB4295BCB
+  116  git commit -S -m "secure"
+  117  git log
+  118  git log --show-signature
+  119  git push
+  120  gpg --armor --export akashanoop123456@gmail.com >> a.txt
+  121  code a.txt
+  122  history
